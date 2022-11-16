@@ -1,0 +1,55 @@
+Server:
+  RunMode: debug  # 线上 release 线下 debug
+  HttpPort: 8028
+  ReadTimeout: 60
+  WriteTimeout: 60
+App:
+  Name: passport
+  OAuthTmpToken : 9db06bcff9248837f86d1a6bcf41c9e7 # 临时的外部请求的token
+  DefaultPageSize: 15
+  MaxPageSize: 100
+  LogSavePath: /var/logs/saas/passport
+  LogFileExt: .log
+Database:
+  ClusterName: CoreDB
+  DBType: mysql
+  Username: root  # 填写你的数据库账号
+  Password: TestSaasj3al5#jH&2020  # 填写你的数据库密码
+  Host: 123.57.94.5
+  Port: 3307
+  DBName: ky_hygl_656
+  TablePrefix:
+  Charset: utf8mb4
+  ParseTime: True
+  MaxIdleConns: 10
+  MaxOpenConns: 30
+TenantDatabaseA:
+  ClusterName: TenantDatabaseA
+  DBType: mysql
+  Username: root  # 填写你的数据库账号
+  Password: TestSaasj3al5#jH&2020  # 填写你的数据库密码
+  Host: 123.57.94.5
+  Port: 3307
+  DBName: ky_hygl_656
+  TablePrefix:
+  Charset: utf8mb4
+  ParseTime: True
+  MaxIdleConns: 10
+  MaxOpenConns: 30
+TenantDatabaseB:
+  ClusterName: TenantDatabaseB
+  DBType: mysql
+  Username: root  # 填写你的数据库账号
+  Password: TestSaasj3al5#jH&2020  # 填写你的数据库密码
+  Host: 123.57.94.5
+  Port: 3307
+  DBName: ky_hygl_656
+  TablePrefix:
+  Charset: utf8mb4
+  ParseTime: True
+  MaxIdleConns: 10
+  MaxOpenConns: 30
+Redis:
+  Host: 123.57.94.5
+  Port: 6380
+  Password: Saas123en123  # 填写你的数据库密码
